@@ -45,15 +45,18 @@ class Brain:
     )
 
   def train(self):
-    # print("Not Converging...This will not take long, but will be less accurate")
-    # for i in range(0, 30):
-    #   self.classification_trainer.train()
+    print("Not Converging...This will not take long, but will be less accurate")
+    for i in range(0, 100):
+        print i
+        self.classification_trainer.train()
 
-    print("Converging...This is going to take long!")
-    self.classification_trainer.trainUntilConvergence()
+    # print("Converging...This is going to take long!")
+    # self.classification_trainer.trainUntilConvergence()
 
   def classify(self, palette):
-    return self.classifier_neural_net.activate(
+    colors = self.classifier_neural_net.activate([
         palette[0][0], palette[0][1], palette[0][2], palette[0][3],
         palette[1][0], palette[1][1], palette[1][2], palette[1][3]
-    )
+    ])
+    
+    return map(round, colors)
