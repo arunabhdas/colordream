@@ -1,1 +1,45 @@
 Dream up pleasing color palettes with ML!
+
+## Installation
+
+1. Clone this repo
+```
+git clone https://github.com/skcript/colordream.git
+```
+
+2. CD into the directory
+```
+cd colordream
+```
+
+3. Enter the Python shell
+```
+python
+```
+
+4. Import the class
+```
+from colordream import ColorDream
+```
+
+5. Get an object instance
+```
+cd = ColorDream()
+```
+
+6. Train the ML
+```
+cd.train()
+```
+
+## Usage
+The ColorDream engine gives you pleasing color choices based on an input you provide. The input is 2 colors and the ML engine returns 3 color matches that works best.
+
+Version 0.1 (current) works only with RGB values passed as an array.
+
+An example,
+
+```
+palette = [[228, 87, 46, 1], [41, 51, 92, 1]]
+cd.test(palette)
+```
