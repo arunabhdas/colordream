@@ -2,34 +2,19 @@ Dream up pleasing color palettes with ML!
 
 ## Installation
 
-1. Clone this repo
-```
-git clone https://github.com/skcript/colordream.git
-```
+1. Clone this repo, `git clone https://github.com/skcript/colordream.git`
+2. CD into the directory, `cd colordream`
+3. Enter the Python shell, `python`
+4. Import ColorDream and use!
 
-2. CD into the directory
 ```
-cd colordream
-```
+>>> from colordream import ColorDream
 
-3. Enter the Python shell
-```
-python
-```
+# Get an object instance
+>>> cd = ColorDream()
 
-4. Import the class
-```
-from colordream import ColorDream
-```
-
-5. Get an object instance
-```
-cd = ColorDream()
-```
-
-6. Train the ML
-```
-cd.train()
+# Train the ML
+>>> cd.train()
 ```
 
 ## Usage
@@ -40,6 +25,6 @@ Version 0.1 (current) works only with RGB values passed as an array.
 An example,
 
 ```
-palette = [[228, 87, 46, 1], [41, 51, 92, 1]]
-cd.test(palette)
+>>> palette = [[228, 87, 46, 1], [41, 51, 92, 1]]
+>>> cd.test(palette)
 ```
