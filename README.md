@@ -28,3 +28,9 @@ An example,
 >>> palette = [[228, 87, 46, 1], [41, 51, 92, 1]]
 >>> cd.test(palette)
 ```
+
+## Contribution Guidelines
+- Raise an issue on https://github.com/skcript/colordream/issues
+- Write appropriate comments and add test cases
+- Raise a pull request
+- Wait for a merge! 💃🏼
